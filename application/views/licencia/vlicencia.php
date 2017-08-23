@@ -14,6 +14,8 @@
 
 </head>
 <body>
+
+
 <?php 
 $this->load->view('vistas_parciales/_navbar');
 echo $output;
