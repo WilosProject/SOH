@@ -17,7 +17,7 @@
    
 
 
-   Fecha realizada: <input type="text" size="10" class="form-control input-sm" id="fecha" placeholder="dd/mm/aaaa" name="fecha"><br><br><br>
+   Fecha realizada: <input type="text"  size="10" class="form-control input-sm" id="fecha" placeholder="dd/mm/aaaa" name="fecha"><br><br><br>
   
     Hora inicial <input type="text" size="2" class="form-control input-sm" id="hini" placeholder="00:00" name="hini">
     Hora final <input type="text" size="2" class="form-control input-sm" id="hfin" placeholder="00:00" name="hfin">
