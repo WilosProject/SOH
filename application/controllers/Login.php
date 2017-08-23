@@ -19,6 +19,12 @@ class Login extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
+
+	<?php
+defined('BASEPATH') OR exit('No direct script access allowed'); //SIEMPRE PEGAR ESTO EN TODOS LOS CONTROLADORES
+	
+class Login extends CI_Controller
+{
 	public function __construct()
 	{
 		parent::__construct();
@@ -29,14 +35,10 @@ class Login extends CI_Controller {
 
 
 	//$this->load->view('Master/login_message');
+	$this->load->helper('url'); //llamar el directorio raiz
 
 	$this->load->view('Master/log');
 
 	}
-
-
-
-		//$this->load->helper('url'); //llamar el directorio raiz
-		
 		
 }
