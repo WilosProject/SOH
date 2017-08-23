@@ -31,6 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
+    
   }
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -85,16 +86,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-          <img src="assets/imagenes/cr.jpg " WIDTH="50px" HEIGHT="50px" ALIGN="right" >
+          <img src="assets/imagenes/cr.jpg" class="img-responsive" style="width:30%" alt="Image">
+
         <div class="carousel-caption">
        
-        </div>      
+        </div>     
       </div>
 
       <div class="item">
         
         <!--<img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">-->
-          <img src="assets/imagenes/CRM.jpg " WIDTH="50px" HEIGHT="50px" ALIGN="right" >
+          <img src="assets/imagenes/CRM.jpg " class="img-responsive" style="width:30%" alt="Image">
+
+        <div class="carousel-caption">
+          <p>Cruz Roja Costarricense.</p>
+        </div>      
+      </div>
+    </div>
+       <div class="item">
+        
+        <!--<img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">-->
+          <img src="assets/imagenes/crr.jpg " class="img-responsive" style="width:30%" alt="Image">
+         
         <div class="carousel-caption">
           <p>Cruz Roja Costarricense.</p>
         </div>      
