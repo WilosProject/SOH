@@ -52,9 +52,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	 ?>
 -->
 
+<<<<<<< HEAD
 <?php $this->load->view('Vistas_Parciales/_navbar'); ?> <!-- llama la vista parcial del navbar-->
+=======
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+>>>>>>> 59b23dcd2d483b728883c2226b956dcd816a45cb
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -64,18 +91,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+          <img src="assets/imagenes/cr.jpg " WIDTH="50px" HEIGHT="50px" ALIGN="right" >
         <div class="carousel-caption">
-          <h3>Sell $</h3>
-          <p>Money Money.</p>
+       
         </div>      
       </div>
 
       <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        
+        <!--<img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">-->
+          <img src="assets/imagenes/CRM.jpg " WIDTH="50px" HEIGHT="50px" ALIGN="right" >
         <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
+          <p>Cruz Roja Costarricense.</p>
         </div>      
       </div>
     </div>
