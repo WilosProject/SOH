@@ -17,7 +17,7 @@
 <body>
 	
 	<?php 
-	$this->load->view('Vistas_Parciales/_navbar'); 
+	$this->load->view('Vistas_Parciales/_navbar');  //AGREGAR LA CARPETA Y EL EL NAV BAR
 	echo $output;
 	 ?>
 
