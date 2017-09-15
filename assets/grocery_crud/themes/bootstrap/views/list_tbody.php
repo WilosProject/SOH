@@ -39,13 +39,13 @@
             <?php if ($buttons_counter === 0) {?>class="hidden"<?php }?>>
                 <div class="only-desktops"  style="white-space: nowrap">
                     <?php if(!$unset_edit){?>
-                        <a class="btn btn-default" href="<?php echo $row->edit_url?>"><i class="fa fa-pencil"></i> <?php echo $this->l('list_edit'); ?></a>
+                        <a class="btn btn-warning" href="<?php echo $row->edit_url?>"><i class="fa fa-pencil"></i> <?php echo $this->l('list_edit'); ?></a>
                     <?php } ?>
                     <?php if (!empty($row->action_urls) || !$unset_read || !$unset_delete) { ?>
 
                         <?php if ($show_more_button) { ?>
                             <div class="btn-group dropdown">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                                     <?php echo $more_string; ?>
                                     <span class="caret"></span>
                                 </button>

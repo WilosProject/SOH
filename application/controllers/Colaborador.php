@@ -1,0 +1,50 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed'); //SIEMPRE PEGAR ESTO EN TODOS LOS CONTROLADORES
+
+class Colaborador extends CI_Controller {
+
+	public function __construct()
+	{
+		parent::__construct();
+
+		$this->load->helper('url'); //llamar el directorio raiz
+		$this->load->database();
+		$this->load->library('Grocery_CRUD');
+	}
+	
+
+
+	public function index()
+	{
+		
+		$crud = new Grocery_CRUD();
+
+		$crud->set_table('tb_persona'); //nombre de la tabla q voy a setear
+		//para  mostrar solo ciertos campos de la tabla:
+		$crud->columns(array("idPersona", "nombPersona", "apellido1", "apellido2", "celular", "emailPer", "codCargo", "codComite"));
+		//VALIDAR Y RELACIONAR Y MOSTRAR NOMBRE NO NOMBPERSO...
+
+
+
+		//ADJUNTAR FOTO:
+		$crud->set_field_upload('foto', 'assets/documentos/fotoPerfil'); //campotabla,
+
+
+
+
+		$crud->set_theme('bootstrap');
+		$crud->unset_bootstrap(); //para que agarre el tema q escogi en la vista
+
+		$crud->set_language("spanish");
+		$output = $crud->render();//renderiza la info de la tabla
+
+
+		//hacer todo de aqui pa arriba-- todo se hace en el controlador
+		
+		$this->load->view('Personal/vcolaborador', $output); //el output hace los sp automatico de insertar y eliminar..
+
+
+
+	}
+} 
+

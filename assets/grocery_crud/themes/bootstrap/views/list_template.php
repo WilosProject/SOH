@@ -100,7 +100,7 @@ $list_displaying = str_replace(
                     <div class="header-tools">
                         <?php if(!$unset_add){?>
                         <div class="floatL t5">
-                            <a class="btn btn-default" href="<?php echo $add_url?>"><i class="fa fa-plus"></i> &nbsp; <?php echo $this->l('list_add'); ?> <?php echo $subject?></a>
+                            <a class="btn btn-success" href="<?php echo $add_url?>"><i class="fa fa-plus"></i> &nbsp; <?php echo $this->l('list_add'); ?> <?php echo $subject?></a>
                         </div>
                         <?php } ?>
                         <div class="floatR">

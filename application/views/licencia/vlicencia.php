@@ -17,8 +17,11 @@
 
 
 <?php 
-$this->load->view('vistas_parciales/_navbar');
+$this->load->view('vistas_parciales/_nav');
 echo $output;
 ?>
 </body>
+
+<!-- SIEMPRE INCLUIR ESTE SCRIPT DE BOOTSTRAP:MIN:JS-->
+<script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js');  ?>"></script> 
 </html>
